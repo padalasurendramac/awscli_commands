@@ -1,0 +1,34 @@
+
+# aws s3 command for list the current bucket list
+
+aws s3 ls 
+
+# aws s3 command for create the new bucket
+
+aws s3api create-bucket --bucket <name> --region us-east-1
+
+# aws s3 command to create folder 
+
+aws s3api put-object --bucket <name> --key <folder_name>
+
+# aws s3 command to copy from local to s3
+
+aws s3 cp <folder>/ s3://<bucket_name>/  --recursive
+
+# aws s3 command to copying s3 to local 
+
+aws s3 cp s3://<bucket_name>/ . --recusive
+
+#aws s3 command for single file copying
+
+aws s3 cp <file> s3://<bucket_name>/
+
+#aws s3 command to delete all files and folder in bucket
+
+aws s3 rm s3://<bucket_name> --recursive
+
+# aws s3 bucket delection 
+
+aws s3api delete-bucket --bucket <bucket_name> --region us-east-1
+
+
