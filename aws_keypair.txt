@@ -1,0 +1,13 @@
+ 
+#awscli command for creating new key pairs
+
+aws ec2 create-key-pair --key-name <name> --query <name> --output text > <Name>.pem
+
+
+# awscli command for list of current key pairs
+
+aws ec2 describe-key-pair --output table
+
+#awscli commond for delete keypair
+
+aws ec2 delete-key-pair --key-name <keyname>
