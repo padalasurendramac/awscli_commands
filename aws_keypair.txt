@@ -10,4 +10,4 @@ aws ec2 describe-key-pair --output table
 
 #awscli commond for delete keypair
 
-aws ec2 delete-key-pair --key-name <keyname>
+aws ec2 delete-key-pairs --key-name <keyname>
